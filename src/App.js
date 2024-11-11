@@ -1,10 +1,10 @@
 import './App.css';
-import Entry from './Components/Entry';
+import MainPage from './Pages/MainPage';
 
 function App() {
   return (
     <>
-    <Entry/>
+      <MainPage/>
     </>
   );
 }
