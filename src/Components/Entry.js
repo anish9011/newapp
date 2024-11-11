@@ -1,9 +1,7 @@
-import React from 'react'
-
-export default function Entry() {
-  return (
-    <div>
-      <h1>i am entry.js file</h1>
-    </div>
-  )
-}
+export default function App() {
+    return (
+      <h1 className="text-3xl font-bold underline text-red-700">
+        Hello world!
+      </h1>
+    )
+  }
