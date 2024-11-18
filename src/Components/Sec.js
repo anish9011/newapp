@@ -1,9 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-export default function Sec() {
+function App() {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    const newcount= count+2;
+    setCount(newcount);
+  };
+
+  const decrement = () => {
+    setCount(count - 1);
+  };
+
+  const reset = () => {
+    setCount(0);
+  };
+
   return (
-    <div>
-      <h1 className="bg-green-300 text-3xl font-white">hello im sec.js</h1>
+    <div className="App">
+      <header className="App-header">
+        <h1>Counter Application</h1>
+        <div className="counter-display">
+          <h2>{count}</h2>
+        </div>
+        <div className="counter-buttons">
+          <button onClick={increment}>Increment&nbsp;&nbsp;&nbsp;</button>
+          <button onClick={decrement}>Decrement&nbsp;&nbsp;&nbsp;</button>
+          <button onClick={reset}>Reset</button>
+        </div>
+      </header>
     </div>
-  )
+  );
 }
+
+export default App;
